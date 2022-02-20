@@ -1,0 +1,299 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --orange-color: #ff6600;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    line-height: 2;
+}
+
+body {
+    background: -webkit-linear-gradient(#C9DCB9, #93B874); 
+    background: -o-linear-gradient(#C9DCB9, #93B874); 
+    background: -moz-linear-gradient(#C9DCB9, #93B874); 
+    background: linear-gradient(#C9DCB9, #93B874); 
+    background-color: #93B874;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+.tab {
+    margin-left: 10px !important;
+}
+
+.separate {
+    border-right: solid 1px var(--orange-color) !important;
+}
+
+.solid_bottom {
+    border-bottom: solid 1px var(--orange-color) !important;
+}
+
+
+.nagbar {
+    display: flex;
+    padding: 10px 0;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nagbar a {
+    display: flex;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.nagbar, .individual_info, .ideal_of_life, .education, .hoppy, .contact {
+    position: relative;
+}
+
+mark {
+    padding: 2px 4px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.individual_info {
+    display: flex;
+    justify-content: center;
+    border-bottom: dashed 2px var(--orange-color);
+
+}
+
+.individual_info .profile_img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 100px;
+    background-position: center;
+    margin: 30px 50px;
+    margin-top: 0;
+}
+
+.individual_info .info {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 60px;
+}
+
+.list_items {
+    margin: 30px 20px;
+    font-size: 20px;
+}
+
+.ideal_of_life {
+    border-bottom: dashed 2px var(--orange-color);
+}
+
+.ideal_of_life .header {
+    display: flex;
+    justify-content: center;
+}
+
+.ideal_of_life .content {
+    display: flex;
+    margin: 30px 20px;
+}
+
+
+.ideal_of_life .content .slogan h3 {
+    width: 150px;
+    height: 96px;
+    text-align: center; 
+}
+
+.ideal_of_life .content .sentence_explain {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.sentence_explain .sentence {
+    text-align: center;
+}
+
+.education {
+    border-bottom: dashed 2px var(--orange-color);
+}
+
+.education .header {
+    display: flex;
+    justify-content: center;
+}
+
+.education .wrap {
+    display: flex;
+    margin: 30px 20px;
+}
+
+
+.education .wrap .time h3 {
+    width: 150px;
+    height: 120px;
+    text-align: center;    
+}
+
+.education .wrap .class_school {
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.hoppy {
+    border-bottom: dashed 2px var(--orange-color);
+}
+
+.hoppy .header {
+    display: flex;
+    justify-content: center;
+}
+
+.hoppy .content {
+    margin: 20px 30px;
+    font-size: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contact p {
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+@media (min-width: 1200px) {
+    img {
+        width: 30px;
+        height: 30px;
+        padding: 0 5px;
+    }
+
+    .nagbar {        
+        margin: 0 150px;
+    }
+
+    .individual_info, .ideal_of_life, .education, .hoppy, .contact {
+        margin: 30px 150px;
+    }
+
+    .individual_info .profile_img {
+        margin: 30px 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    img {
+        width: 20px;
+        height: 20px;
+        padding: 0 5px;
+        margin-top: 5px;
+    }
+
+    .nagbar {
+        margin: 0 100px;
+    }
+    
+    
+    .individual_info, .ideal_of_life, .education, .hoppy, .contact {
+        margin: 30px 80px;
+    }     
+
+    .individual_info .profile_img {
+        margin: 30px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    img {
+        width: 20px;
+        height: 20px;
+        padding: 0 5px;
+        margin-top: 5px;
+    }
+
+    .nagbar {
+        margin: 0 80px;
+    }
+
+    .individual_info, .ideal_of_life, .education, .hoppy, .contact {
+        margin: 30px 60px;
+    }  
+
+    .individual_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .individual_info .info {
+        margin-top: 0;
+    }
+
+    .individual_info .info .name {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    * {
+        line-height: 1.5;
+    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        margin-top: 10px;
+    }
+    
+    .nagbar {
+        margin: 0 40px;
+    }
+
+    .individual_info, .ideal_of_life, .education, .hoppy, .contact {
+        margin: 30px 20px;
+    }
+    
+    .individual_info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .individual_info .info {
+        margin-top: 0;
+    }
+
+    .individual_info .info .name {
+        text-align: center;
+    }
+
+    .education .wrap .time h3 {
+        height: 90px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 612px) {
+    .education .wrap .time h3 {
+        height: 120px;
+    }
+}
+
+@media (max-width: 599px) {
+    .education .wrap .time h3 {
+        height: 150px;
+    }
+}
